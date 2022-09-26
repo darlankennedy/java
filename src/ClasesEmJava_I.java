@@ -5,12 +5,15 @@ import com.br.entities.Carro;
 import com.br.entities.Pessoa;
 
 public class ClasesEmJava_I {
+	
 	public static void main(String[] args) {
 		
 		Carro carro = new Carro();
 		Carro carro1 = new Carro();
 		Carro carro2 = new Carro();
+		
 		Carro carro3 = new Carro("awj",150.00,2000.00,2000.00,"amarelo","fiat",4,10.00,1,false);
+		
 		ArrayList<Carro> carros = new ArrayList<Carro>();
 		ArrayList<Double> notas = new ArrayList<>();
 		ArrayList<String> aprovadas = new ArrayList<>();
@@ -93,6 +96,17 @@ public class ClasesEmJava_I {
 		
 		System.out.println(aluno.imprimirAluno());
 		
+		
+		System.out.println("------------------------------------------\n");
+		
+		
+		for (int i = 0; i < aluno.getDisciplinasAprovadas().size(); i++) {
+			System.out.println(" Aprovadas: "+aluno.getDisciplinasAprovadas().get(i)+"\n");
+		}
+		
+		for (int i = 0; i < aluno.getDisciplinasMatriculadas().size(); i++) {
+			System.out.println(" matriculada: "+aluno.getDisciplinasMatriculadas().get(i)+"\n");
+		}
 		
 		
 	}
