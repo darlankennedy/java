@@ -77,6 +77,9 @@ public class ClasesEmJava_I {
 		notas.add(20.10);
 		notas.add(10.00);
 		notas.add(60.00);
+		notas.add(60.00);
+		notas.add(80.00);
+		notas.add(100.00);
 		
 		
 		matriculadas.add("matematica");

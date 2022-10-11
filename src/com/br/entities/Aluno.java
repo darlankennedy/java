@@ -139,6 +139,8 @@ public class Aluno extends Pessoa implements IAluno{
 				"Matricula: "+this.matricula+"\n"+
 				"curso: "+this.nomeCurso;
 		
+		
+		String msgNotas = "";
 		int count = 0;
 		double acon = 0;
 		
@@ -146,12 +148,13 @@ public class Aluno extends Pessoa implements IAluno{
 			for (int i = 0; i < this.getNotas().size(); i++) {
 				count +=1;
 				acon+=this.getNotas().get(i);
-				msg += msg + "( Nota : " +(i+1)+") "+this.getNotas().get(i);  
+				msgNotas += "( Nota : " +(i+1)+") "+this.getNotas().get(i);  
 			}	
+			msg += (msg + msgNotas) + "( media : " +(acon/count)+")";
 		}
 		
 		
-		msg += msg + "( media : " +(acon/count)+")";
+		
 		
 		return msg;
 		
